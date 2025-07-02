@@ -134,7 +134,7 @@
     
         <fieldset>
           <legend><i>Enter Your Details Here</i></legend>
-          <form action="https://formspree.io/f/mrbkjkkp" target="_blank" method="post">
+          <form action="https://formspree.io/f/mrbkjkkp" method="post">
             <input type="text" placeholder="Your Name" name="name" />
             <input type="email" placeholder="Your Email" name="email" required />
             <input type="text" placeholder="Subject" name="subject"/>
@@ -223,6 +223,19 @@
     document.querySelector('.mobile-nav').classList.toggle('active');
   }
 </script>
+    
+<script>
+  document.querySelector("form").addEventListener("submit", function(event) {
+    // Optionally prevent default if you plan to handle the submission via JavaScript (not Formspree)
+    // event.preventDefault();
+
+    // Wait a moment to ensure submission happens before clearing
+    setTimeout(() => {
+      this.reset();
+    }, 100);
+  });
+</script>
+
 
       
       
