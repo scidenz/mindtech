@@ -1109,6 +1109,7 @@ button:hover {
     @media (max-width: 480px) {
       body {
         font-size: 14px;
+        overflow-x: hidden;
       }
     
       .hero h1 {
@@ -1119,7 +1120,7 @@ button:hover {
     
       .hero h2,
       .section h2 {
-        font-size: 1rem;
+        font-size: 2rem;
         text-align: center;
         margin-left: 0;
       }
@@ -1132,10 +1133,10 @@ button:hover {
     
       .btn,
       button {
-        width: 80%;
+        width: 50%;
         font-size: 0.95rem;
         padding: 10px;
-        margin: 10px auto;
+        margin-left: 1rem;
         display: block;
       }
 
@@ -1144,15 +1145,15 @@ button:hover {
         margin-top: 1px;
         width: 20rem;
         margin-bottom: 10px;
-        margin-right: 2.5rem;
+        margin-right: 1rem;
       }
     
       nav,
       .mobile-nav.active {
-        width: 100%;
-        margin-left: 0;
+        width: 60%;
+        margin-left: 1.5rem;
         padding: 10px 0;
-        border-radius: 0;
+        border-radius: 8px;
       }
 
       .header-icons {
@@ -1188,13 +1189,14 @@ button:hover {
       }
     
       .abous {
-        height: auto;
+        height: 20rem;
+        width: 100%;
         background-size: cover;
-        padding: 2rem;
       }
     
       .abous-content h1 {
         font-size: 2rem;
+        margin-right: 1rem;
       }
     
       .abous-content p {
@@ -1264,16 +1266,19 @@ button:hover {
         width: 100%;
         padding: 10px;
       }
+
+      .service-box h3{
+        font-size: 20px;
+      }
     
       fieldset {
-        width: 100%;
+        width: 95%;
         padding: 8px;
       }
     
       /* FOOTER */
       .social-links {
         margin-left: 0;
-        justify-content: center;
       }
     
       footer {
@@ -1283,14 +1288,26 @@ button:hover {
         justify-content: space-between;
         align-items: flex-start;
         padding: 30px 15px;
-        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        font-size: 20px;
       }
     
       .footer-col {
-        flex: 1 1 45%;
+        flex: 1 1 20%;
         min-width: 140px;
-        margin-bottom: 15px;
-        text-align: left;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      .footer-col h3{
+        margin-top: 2px;
+      }
+   
+      .footer-col p a{
+        font-size: 20px;
+      }
+      .footer-col img{
+        margin-bottom: -20px;
       }
     
       /* MAP */
