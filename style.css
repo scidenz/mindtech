@@ -1223,6 +1223,13 @@ button:hover {
       }
     
       /* TEAM SECTION */
+      .meet-team{
+        background-color: #004c7a;
+        margin-bottom: -20px;
+      }
+      .meet-team h2{
+        color: white;
+      }
       .teamy,
       .teames-h {
         font-size: 1.5rem;
@@ -1242,7 +1249,7 @@ button:hover {
       }
     
       .team-member img {
-        height: 160px;
+        height: 206px;
         width: 100%;
         object-fit: cover;
       }
