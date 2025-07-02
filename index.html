@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | MINDTECH ADVERTISING</title>
+    <link rel="shortcut icon" href="img/logo/sdf.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  const videoCount = 4;
+  let currentVideoIndex = 1;
+  let switchTimeout = null; // For clearing the 14s timer
+
+  function switchVideo() {
+    const currentVideo = document.getElementById(`video${currentVideoIndex}`);
+    currentVideo.classList.add('hidden');
+    currentVideo.pause();
+    currentVideo.currentTime = 0;
+
+    // Move to next video, or loop back to first
+    currentVideoIndex = currentVideoIndex < videoCount ? currentVideoIndex + 1 : 1;
+
+    const nextVideo = document.getElementById(`video${currentVideoIndex}`);
+    nextVideo.classList.remove('hidden');
+    nextVideo.play();
+
+    // When next video ends naturally, switch
+    nextVideo.onended = switchVideo;
+
+    // Force switch after 14 seconds
+    clearTimeout(switchTimeout);
+    switchTimeout = setTimeout(switchVideo, 14000);
+  }
+
+  // Start playing the first video
+  window.onload = function() {
+    const firstVideo = document.getElementById('video1');
+    firstVideo.classList.remove('hidden');
+    firstVideo.onended = switchVideo;
+    firstVideo.play();
+
+    // Also switch after 14 seconds
+    switchTimeout = setTimeout(switchVideo, 14000);
+  };
+</script>
+
+<body>
+    
+  <section class="hero">
+    <!-- First Video -->
+    <video id="video1" class="bg-video" autoplay muted playsinline>
+      <source src="img/Mindtechgallery/output2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <!-- Second Video (initially hidden) -->
+    <video id="video2" class="bg-video hidden" muted playsinline preload="auto">
+      <source src="img/Mindtechgallery/output.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <video id="video3" class="bg-video hidden" muted playsinline preload="auto">
+      <source src="img/Mindtechgallery/output1.mp4" type="video/mp4">
+    </video>
+
+    <video id="video4" class="bg-video hidden" muted playsinline preload="auto">
+      <source src="img/Mindtechgallery/output31.mp4" type="video/mp4">
+    </video>
+
+    <div class="video-overlay"></div>
+  
+    <!-- Overlay content -->
+    <div class="overlay">
+      <div class="logo-toggle-container">
+      <header class="not-home">
+        <div class="logo">
+          <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+          <span><i style="color: white;">MindTech Advertising</i></span>
+        </div>
+    
+        <nav>
+          <ul>
+            <li><a href="index.html" style="color: white;">Home</a></li>
+            <li><a href="about.html" style="color: white;">About</a></li>
+            <li><a href="services.html" style="color: white;">Services</a></li>
+          </ul>
+        </nav>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav class="mobile-nav">
+          <a href="index.html" style="color: white;">Home</a>
+          <a href="about.html" style="color: white;">About</a>
+          <a href="services.html" style="color: white;">Services</a>
+        </nav>
+
+      </header>
+      <h1><i>Mindtech Advertising</i></h1>
+      <h2>Smart Advertising Starts Here</h2>
+      <p>Creative strategies. Let us grow your brand.</p>
+    </div>
+  </section>
+  
+  <section class="mindtech-intro">
+    <h2 class="intro-heading">Welcome to MindTech Advertising</h2>
+    <p class="intro-text">
+      At MindTech Advertising, we believe that a great idea is only as powerful as the strategy behind it. That's why we combine creativity with technology to deliver campaigns that make a real impact. Whether you’re a startup or an established company, our job is to elevate your brand and connect it with your audience on a deeper level.
+    </p>
+    <p class="intro-text">
+      Founded with the vision to revolutionize the digital advertising landscape in East Africa, MindTech brings together creative professionals, data analysts, and technology innovators under one roof. We pride ourselves on delivering customized advertising strategies that align with your goals and produce measurable results.
+    </p>
+  </section>
+  
+  <section class="mindtech-mission">
+    <h2 class="mission-heading">Our Mission</h2>
+    <p class="mission-text">
+      To empower brands through smart, data-driven advertising strategies that inspire engagement, build loyalty, and increase visibility in the digital and physical space. We’re committed to quality, integrity, and results.
+    </p>
+    <ul class="mission-list">
+      <li class="mission-item">Deliver innovative marketing solutions</li>
+      <li class="mission-item">Embrace emerging technologies to maximize impact</li>
+      <li class="mission-item">Support businesses of all sizes with scalable services</li>
+    </ul>
+  </section>
+  
+    
+      <section class="section container">
+        <h2>What We Offer</h2>
+        <div class="services">
+          <div class="service-box">
+            <div class="service-box-content">
+              <h3>Digital Marketing</h3>
+              <p>Our team crafts powerful digital strategies including SEO, social media, and Google Ads to ensure your message reaches the right audience at the right time.</p>
+            </div>
+          </div>
+          
+          <div class="service-box">
+            <div class="service-box-content">
+              <h3>Brand Identity</h3>
+              <p>From logo design to full brand books, we make sure your business reflects a strong, professional, and unique identity in every touchpoint.</p>
+            </div>
+          </div>
+          
+          <div class="service-box">
+            <div class="service-box-content">
+              <h3>Creative Content</h3>
+              <p>We produce high-quality videos, infographics, articles, and more to tell your story in a way that resonates with your audience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <p class="quote">“MindTech Advertising transformed our brand presence online. The results were beyond expectations.”</p>
+            <div class="client-info">
+              <img src="img/Mindtechgallery/client.webp" alt="Client Photo">
+              <div>
+                <h4>Sarah Nakato</h4>
+                <span>Marketing Manager, KawaTech</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-container">
+            <div class="testimonial-card">
+              <p class="quote">“MindTech Advertising transformed our brand presence physically special not only in branding but also in logo deisgns. The results were beyond expectations and our clients love them.”</p>
+              <div class="client-info">
+                <img src="img/Mindtechgallery/client.webp" alt="Client Photo">
+                <div>
+                  <h4>Gloria Mbabazi</h4>
+                  <span>Marketing Manager, Biohaz</span>
+                </div>
+              </div>
+            </div>
+      
+          <div class="testimonial-card">
+            <p class="quote">“Very creative and professional team. We highly recommend them for any digital needs.”</p>
+            <div class="client-info">
+              <img src="img/Mindtechgallery/client.webp" alt="Client Photo">
+              <div>
+                <h4>David Okello</h4>
+                <span>CEO, Okello Group</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+      <section class="section container">
+        <h2>Ready to Get Started?</h2>
+        <p>
+          Join dozens of clients who have grown their businesses through MindTech’s powerful advertising solutions. Whether you're looking for a one-off campaign or a long-term strategy, we're here to help.
+        </p>
+        <a href="services.html#cont" class="btn">Contact Us Today</a>
+      </section>
+    
+
+      <footer>
+        <div class="footer-col">
+          <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+          <h3>MindTech Advertising</h3>
+          <p>Innovative ideas. Proven strategies. Digital success.</p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="services.html#cont">Contact</a></p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <p>Email: mindtech256@gmail.com</p>
+          <p>Phone: +1 (416) 827-5379</p>
+          <p>Location: Kataza Close, Bugolobi</p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/mindtechadvertising"><img src="img/social/facebook.webp" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/mindtechadvtg?fbclid=IwY2xjawLAlLdleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR7pBFvUDst8ypAoKr26vWzxzk0OPJ7e2j4PxBzmAjtw_MPrPKZ44vaSOkIyDQ_aem__ZqG-b9cwwBGcaA8X5pEEw"><img src="img/social/instagram.webp" alt="Instagram" /></a>
+            <a href="https://x.com/Mindtechadvtg?fbclid=IwY2xjawLAlGlleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR52MREnwsjvEmJcH6RB7_djA7UjfMrPGRc45rRbCVog_F8-LHMDDaLJvBfN9g_aem_PmAAOY45XRyRHErs_tu3Bg"><img src="img/social/twitter.webp" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/julius-mwanje-65414233a/?originalSubdomain=ug"><img src="img/social/linkedin.webp" alt="LinkedIn" /></a>
+            <a href="https://wa.me/256782694882"><img src="img/social/watsapp.webp" alt="Whatsapp" /></a>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navMenu = document.getElementById("nav-menu");
+      
+        toggleBtn.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      </script>
+
+      <script>
+        function toggleMenu() {
+          document.querySelector('.mobile-nav').classList.toggle('active');
+        }
+      </script>
+
+      
+      
+</body>
+</html>

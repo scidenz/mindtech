@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us| Mindtech Advertising</title>
+    <link rel="shortcut icon" href="img/logo/sdf.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <header class="not-home">
+          <div class="logo">
+            <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+            <span><i>MindTech Advertising</i></span>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+            </ul>
+          </nav>
+    
+          <button class="menu-toggle" style="background-color: #004b7a82; color: white;" onclick="toggleMenu()">☰</button>
+            <nav class="mobile-nav">
+              <a href="index.html" style="color: white;">Home</a>
+              <a href="about.html" style="color: white;">About</a>
+              <a href="services.html" style="color: white;">Services</a>
+            </nav>
+    
+          </header>
+      </div>
+
+      <div class="abous">
+        <div class="abous-overlay"></div>
+        <div class="abous-content">
+          <!-- Put your text, nav links, etc. here -->
+          <h1>About US <span>| <i>Welcome to Our Site</i></span></h1>
+          <p>This is the about section.</p>
+        </div>
+      </div>
+
+      <section class="about-container">
+        <div class="abous1 fade-in">
+          <h2>About MTAG</h2>
+          <p>MindTech Advertising was founded to bridge the gap between creative innovation and marketing performance. With years of experience in advertising, branding, and digital technology, our team delivers impactful campaigns tailored to each client’s unique needs.</p>
+          <p>We are proud to have worked with businesses across Uganda and East Africa, helping them enhance visibility, boost engagement, and build long-term customer relationships. Our agency thrives on passion, curiosity, and measurable success.</p>
+          <p>At our core, we value innovation, transparency, and measurable success. Every project we undertake is guided by data insights and creative storytelling, ensuring each campaign is both impactful and trackable. At MindTech Advertising, we don’t just market — we empower brands to thrive in a competitive world.</p>
+        </div>
+      
+        <div class="about-img fade-in">
+          <img src="img/team/6.webp" alt="Managing Director Mindtech">
+          <h3>Mr. Mwanje Julius</h3>
+          <p>Managing Director</p>
+        </div>
+      </section>
+
+      <h2 class="teamy">Our Mission</h2>
+      <div class="dropdown-container">
+        <!-- Dropdown 1 -->
+        <button onclick="toggleDropdown('missionContent', 'missionIcon')" class="dropdown-btn">
+          At MindTech Advertising, our mission is to merge creativity...
+          <span id="missionIcon" class="dropdown-icon">▼</span>
+        </button>
+        <div id="missionContent" class="dropdown-content">
+          <p>
+            <span>"Our mission"</span><br><br>
+            At MindTech Advertising, our mission is to merge creativity with strategy to deliver powerful and memorable brand experiences. We are committed to helping businesses grow by crafting innovative, data-driven marketing campaigns that resonate with their audience. Through a combination of storytelling, design excellence, and digital intelligence, we empower our clients to stand out in an ever-evolving marketplace.
+
+            We believe that every brand has a unique voice — our job is to amplify it. By staying ahead of trends and embracing cutting-edge technology, we ensure our clients not only remain relevant but also lead within their industries. From concept to execution, our passion lies in creating meaningful connections between brands and people.
+          </p>
+        </div>
+        
+        <h2 class="teamy">Our Core Values</h2>
+        <!-- Dropdown 2 -->
+        <button onclick="toggleDropdown('visionContent', 'visionIcon')" class="dropdown-btn">
+          Creativity: We believe in the power of..
+          <span id="visionIcon" class="dropdown-icon">▼</span>
+        </button>
+        <div id="visionContent" class="dropdown-content">
+          <div class="core-values">
+            
+            <ul>
+              <span>"Our Core Values"</span><br><br>
+              <li><strong>Creativity:</strong> We believe in the power of ideas that captivate and inspire.</li>
+              <li><strong>Integrity:</strong> Transparent processes and honest client relationships.</li>
+              <li><strong>Excellence:</strong> Every project receives our full attention and commitment to quality.</li>
+              <li><strong>Innovation:</strong> We embrace change, trends, and new technology in everything we do.</li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+
+      <h2 class="teames-h">Meet Some of the Team</h2>
+      <section class="teames">
+        <div class="team-gallery">
+          <!-- Team Member 1 -->
+
+          <div class="team-member">
+            <img src="img/team/20241227_174528000_iOS 2.webp" alt="Creative manager">
+            <h3>Mrs. Nalwanga Florence</h3>
+            <p>Creative Director</p>
+          </div>
+      
+          <!-- Team Member 2 -->
+          <div class="team-member">
+            <img src="img/team/ash.webp" alt="Marketing manager">
+            <h3>Mr. Mutebi Ashiraf</h3>
+            <p>Marketing Manager</p>
+          </div>
+
+          <div class="team-member">
+            <img src="img/team/giden.webp" alt="Sales manager">
+            <h3>Mr. Nsubuga Sharif</h3>
+            <p>Sales manager</p>
+          </div>
+      
+          <!-- Team Member 3 -->
+          <div class="team-member">
+            <img src="img/team/shaf (1).webp" alt="Brand strategist">
+            <h3>Mr. Kalunga Shafiq</h3>
+            <p>Brand Strategist</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="cont">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Whether you’re looking to grow your business, learn more about our services, or simply connect — reach out to us anytime.</p>
+    
+        <fieldset>
+          <legend><i>Enter Your Details Here</i></legend>
+          <form action="https://formspree.io/f/mrbkjkkp" target="_blank" method="post">
+            <input type="text" placeholder="Your Name" name="name" />
+            <input type="email" placeholder="Your Email" name="email" required />
+            <input type="text" placeholder="Subject" name="subject"/>
+            <textarea rows="5" placeholder="Your Message" name="message"></textarea>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </fieldset>  
+      </section><br><br><br>
+
+      <footer>
+        <div class="footer-col">
+          <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+          <h3>MindTech Advertising</h3>
+          <p>Innovative ideas. Proven strategies. Digital success.</p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About</a></p>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="services.html#cont">Contact</a></p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <p>Email: mindtech256@gmail.com</p>
+          <p>Phone: +1 (416) 827-5379</p>
+          <p>Location: Kataza Close, Bugolobi</p>
+        </div>
+      
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/mindtechadvertising"><img src="img/social/facebook.webp" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/mindtechadvtg?fbclid=IwY2xjawLAlLdleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR7pBFvUDst8ypAoKr26vWzxzk0OPJ7e2j4PxBzmAjtw_MPrPKZ44vaSOkIyDQ_aem__ZqG-b9cwwBGcaA8X5pEEw"><img src="img/social/instagram.webp" alt="Instagram" /></a>
+            <a href="https://x.com/Mindtechadvtg?fbclid=IwY2xjawLAlGlleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR52MREnwsjvEmJcH6RB7_djA7UjfMrPGRc45rRbCVog_F8-LHMDDaLJvBfN9g_aem_PmAAOY45XRyRHErs_tu3Bg"><img src="img/social/twitter.webp" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/julius-mwanje-65414233a/?originalSubdomain=ug"><img src="img/social/linkedin.webp" alt="LinkedIn" /></a>
+            <a href="https://wa.me/256782694882"><img src="img/social/watsapp.webp" alt="Whatsapp" /></a>
+          </div>
+        </div>
+      </footer>
+    
+      <script>
+        function toggleDropdown(contentId, iconId) {
+          const content = document.getElementById(contentId);
+          const icon = document.getElementById(iconId);
+      
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            icon.textContent = "▼";
+          } else {
+            content.style.display = "block";
+            icon.textContent = "▲";
+          }
+        }
+      </script>
+
+<script>
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  const appearOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  fadeElements.forEach(el => appearOnScroll.observe(el));
+</script>
+
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+</script>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.mobile-nav').classList.toggle('active');
+  }
+</script>
+
+      
+      
+      
+</body>
+</html>

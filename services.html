@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | MINDTECH ADVERTISING</title>
+    <link rel="shortcut icon" href="img/logo/sdf.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  window.onload = function () {
+    const hash = window.location.hash;
+
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        // Optional: Scroll to top first if needed
+        window.scrollTo({ top: 0 });
+
+        // Slight delay to allow layout/rendering
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "smooth" });
+        }, 90);
+      }
+    }
+  };
+</script>
+
+
+<body>
+  <div class="overlay">
+    <header class="not-home">
+      <div class="logo">
+        <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+        <span><i>MindTech Advertising</i></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" style="background-color: #004b7a82; color: white;" onclick="toggleMenu()">☰</button>
+        <nav class="mobile-nav">
+          <a href="index.html" style="color: white;">Home</a>
+          <a href="about.html" style="color: white;">About</a>
+          <a href="services.html" style="color: white;">Services</a>
+        </nav>
+
+      </header>
+  </div>
+  <section class="section">
+    <h2>Our Services</h2>
+    <p>
+      MindTech Advertising offers a full range of services designed to help your brand stand out in a crowded marketplace. From brand development to digital advertising, our team applies smart strategies that are tailored to your audience.
+    </p>
+  </section>
+
+  <section class="section services">
+    <div class="service-box">
+      <img src="img/Mindtechgallery/470798747_1112761870528438_4976418166229671982_n.webp" alt="Social Media Management" />
+      <h3>Branding</h3>
+      <p>
+        Branding is how your business is seen and remembered. It’s more than a logo — it’s your voice, look, and message working together to build trust and recognition. Strong branding sets you apart, connects with your audience, and adds value to everything you do.</p>
+    </div>
+    <div class="service-box">
+      <img src="img/Mindtechgallery/graphicdesign.webp" alt="Graphic Design" />
+      <h3>Graphic Design</h3>
+      <p>Our designers craft stunning visuals that capture your brand's essence, from logos and posters to brochures and online ads.</p>
+    </div>
+    <div class="service-box">
+      <img src="img/Mindtechgallery/mindtech1.webp" alt="Web Development" />
+      <h3>Web Development</h3>
+      <p>At MindTech Advertising, we create professional, custom-built websites that reflect your brand and drive results.</p>
+    </div>
+    <div class="service-box">
+      <img src="img/Mindtechgallery/470671512_1110499414088017_5991170312535699284_n.webp" alt="3D Signs" />
+      <h3>3D Signs</h3>
+      <p>Whether it’s indoor signage for your office or exterior signs for your storefront, our 3D designs add depth, professionalism, and a modern touch to your business image. Crafted using high-quality materials like acrylic, PVC, or metal, our signs are built to last while making a strong visual impact.</p>
+    </div>
+  </section>
+
+  <section class="image-gallery">
+    <h2 class="gallery-heading">Our Work Gallery</h2>
+    <div class="gallery-grid">
+      <img src="img/Mindtechgallery/129217382_178713747266593_4779241010763390115_n.webp" alt="Gallery Image 1">
+      <img src="img/Mindtechgallery/470181249_1107126797758612_3385900388635845902_n.webp" alt="Gallery Image 2">
+      <img src="img/Mindtechgallery/470671512_1110499414088017_5991170312535699284_n.webp" alt="Gallery Image 3">
+      <img src="img/Mindtechgallery/470798747_1112761870528438_4976418166229671982_n.webp" alt="Gallery Image 4">
+      <img src="img/Mindtechgallery/475745387_1158784669586445_3538080052021369321_n.webp" alt="Gallery Image 5">
+      <img src="img/Mindtechgallery/476041650_1158019419662970_574001906634092729_n (1).webp" alt="Gallery Image 6">
+      <img src="img/Mindtechgallery/483508608_1192030509595194_8401266332409385190_n.webp" alt="Gallery Image 7">
+      <img src="img/Mindtechgallery/485648725_1196517799146465_3977325096607397804_n.webp" alt="Gallery Image 8">
+      <img src="img/Mindtechgallery/489701490_1215056763959235_7512940318101946715_n.webp" alt="Gallery Image 9">
+      <img src="img/Mindtechgallery/494151796_1233767848754793_2690881883599510877_n.webp" alt="Gallery Image 10">
+      <img src="img/Mindtechgallery/492132400_1228155812649330_2910502689038754721_n.webp" alt="Gallery Image 11">
+      <img src="img/Mindtechgallery/476089991_1163043922493853_4351581938819208506_n.webp" alt="Gallery Image 12">
+    </div><br>
+    <a href="https://www.facebook.com/mindtechadvertising/photos" class="btn1">View All</a>
+  </section>
+
+  <section class="section container" id="cont">
+    <h2>Get in Touch</h2>
+    <p>We’d love to hear from you! Whether you’re looking to grow your business, learn more about our services, or simply connect — reach out to us anytime.</p>
+
+    <fieldset>
+      <legend><i>Enter Your Details Here</i></legend>
+      <form action="https://formspree.io/f/mrbkjkkp" target="_blank" method="post">
+        <input type="text" placeholder="Your Name" name="name" />
+        <input type="email" placeholder="Your Email" name="email" required />
+        <input type="text" placeholder="Subject" name="subject"/>
+        <textarea rows="5" placeholder="Your Message" name="message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </fieldset>  
+  </section>
+
+  <section class="section container">
+    <h2>Visit Our Office</h2>
+    <p>
+      <strong>Location:</strong> Kataza Close, Bugolobi<br>
+      <strong>Email:</strong> info@mindtech.com <br>
+      <strong>Phone:</strong> +256 700 123456
+    </p>
+    <section class="maps">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6369.461225481309!2d32.61251754572873!3d0.321441026643294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sKataza%20close%20bugolobi!5e1!3m2!1sen!2sug!4v1750778467922!5m2!1sen!2sug" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </section>  
+  </section>
+  
+<footer>
+  <div class="footer-col">
+    <img src="img/logo/sdf.webp" alt="MindTech Logo" />
+    <h3>MindTech Advertising</h3>
+    <p>Innovative ideas. Proven strategies. Digital success.</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>Quick Links</h3>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="about.html">About</a></p>
+    <p><a href="services.html">Services</a></p>
+    <p><a href="services.html#cont">Contact</a></p>
+  </div>
+
+  <div class="footer-col">
+    <h3>Contact Info</h3>
+    <p>Email: mindtech256@gmail.com</p>
+    <p>Phone: +1 (416) 827-5379</p>
+    <p>Location: Kataza Close, Bugolobi</p>
+  </div>
+
+  <div class="footer-col">
+    <h3>Follow Us</h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/mindtechadvertising"><img src="img/social/facebook.webp" alt="Facebook" /></a>
+      <a href="https://www.instagram.com/mindtechadvtg?fbclid=IwY2xjawLAlLdleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR7pBFvUDst8ypAoKr26vWzxzk0OPJ7e2j4PxBzmAjtw_MPrPKZ44vaSOkIyDQ_aem__ZqG-b9cwwBGcaA8X5pEEw"><img src="img/social/instagram.webp" alt="Instagram" /></a>
+      <a href="https://x.com/Mindtechadvtg?fbclid=IwY2xjawLAlGlleHRuA2FlbQIxMABicmlkETFNanJSMXcwU1NkRkRVZlVvAR52MREnwsjvEmJcH6RB7_djA7UjfMrPGRc45rRbCVog_F8-LHMDDaLJvBfN9g_aem_PmAAOY45XRyRHErs_tu3Bg"><img src="img/social/twitter.webp" alt="Twitter" /></a>
+      <a href="https://www.linkedin.com/in/julius-mwanje-65414233a/?originalSubdomain=ug"><img src="img/social/linkedin.webp" alt="LinkedIn" /></a>
+      <a href="https://wa.me/256782694882"><img src="img/social/watsapp.webp" alt="Whatsapp" /></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.mobile-nav').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
